@@ -21,7 +21,7 @@ contract Converter {
         uint k = 4;
         while(firstFour != 0) {
             // If symbol position is equal k, stores symbol in bytes and decrease k
-            if(k == charPos && len > 3) bStr[k--] = char;
+            if(k == charPos) bStr[k--] = char;
             bStr[k--] = bytes1(uint8(48 + (firstFour % 10)));
             firstFour /= 10;
         }
