@@ -3,7 +3,7 @@ pragma solidity >0.7.0;
 contract Converter {
 
     function convert(uint _num) public pure returns (string memory) {
-        bytes memory map = '0000KKKMMMGGGTTTPPPEEEZZZY';
+        bytes memory map = '0000KKKMMMGGGTTTPPPEEEZZZYYY';
         uint8 len;
         // Calculate the length of the input number
         uint i = _num;
